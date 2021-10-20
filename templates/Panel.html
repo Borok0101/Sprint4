@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Panel</title>
+  
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/estiloPanel.css') }}">
+
+</head>
+<body>
+
+  <div class="B1">
+    <p class="titulo">AeroNorte</p>
+  </div>
+
+  <div class="Contenedor">
+    <a href="{{ url_for ('infor')}}">
+    <div class="C1">
+      <img src="{{ url_for('static', filename='css/estadisticas.png') }}" width="50px" height="50px" />    
+      <p class="A1">Información de vuelos</p>
+      <p class="E1">Acceda a informacion detallada y reportes </p>
+    </div>
+  </a>
+
+  <a href="#">
+    <div class="C1">
+      <img src="{{ url_for('static', filename='css/gestion.png') }}" width="50px" height="50px" />
+      <p class="A1">Administrar Usuarios</p>     
+      <p class="E1">Modifique los permisos de los suarios</p> 
+    </div>
+  </a>
+    <a href="#"></a>
+    <div class="C1">
+      <img src="{{ url_for('static', filename='css/correo.png') }}" width="50px" height="50px" />
+      <p class="A1">Buzón de comentarios</p>
+      <p class="E1">Consulte los comentarios de los usuarios</p>
+    </div>
+  </a>
+
+  </div>
+
+</body>
+</html>

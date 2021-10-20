@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Panel</title>
+
+<link rel="stylesheet" href="{{url_for('static', filename='css/estilo.css')}}">
+
+</head>
+<body>
+
+<div class="wrapper">
+  <form method="POST" class="login"   action="/login">
+    <p class="title">Iniciar sesión</p>
+    <input name = "email" type="text" id='nombre'  placeholder="Nombre de usuario" autofocus/>
+    <input name = "password" type="password" id='contra'  placeholder="Contraseña" />
+    <i class="fa fa-key"></i>
+    <a href="#">¿Olvidaste tu contraseña?</a>
+    <br>
+    <a href="{{ url_for ('registro')}}">Registrarse</a>
+    <div id = "Error"> </div>
+    
+    <button type = "submit" >
+      <span class="state" >Iniciar sesión</span>
+   </button>
+  </form>
+  
+  </p>
+</div>
+
+  
+
+<script  src="{{url_for('static', filename='Script.js')}}"> </script>
+</body>
+</html>
