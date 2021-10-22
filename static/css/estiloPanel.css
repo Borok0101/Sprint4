@@ -1,0 +1,102 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  height: 100vh;
+  background-image: linear-gradient(
+    rgba(207, 203, 203, 0.555), 
+    rgba(207, 203, 203, 0.555)
+  ),
+url('/static/css/Imagen1.jpg');  
+  background-size: cover;
+}
+
+.titulo{
+  font-size: 300%;
+  font-weight: bold;
+  letter-spacing: 10px;
+  text-align: center;
+  text-shadow: gray 8px 8px, gray -8px -8px;
+  text-transform: uppercase;
+  color: #ee82879b;
+  
+}
+
+
+div{
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.B1{
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 1em;
+  margin-top: 30px;
+  
+}
+.Contenedor{
+  text-align: center;
+  
+}
+
+.C1{
+  background-color: rgb(255, 255, 255);
+  padding: 1em;
+  width: 300px;
+height: 200px;
+margin: 50px;
+border: 1px solid #959191;
+
+display: inline-block;
+}
+.A1{ /* Titulos de cada cuadro*/
+  font-weight: bold;
+  font-size: 20px;
+  color: #ee5057;
+  font-family: Helvetica, Helvetica, sans-serif
+  
+}
+
+
+
+.C1{
+  background-color: #ffffff;
+ 
+width: 250px;
+cursor: pointer;
+
+
+color: rgb(3, 3, 3);
+transition: all 0.5s;
+position: relative;
+}
+.C1::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 1;
+background-color: rgba(255, 255, 255, 0.212);
+transition: all 0.3s;
+}
+.C1:hover::before {
+opacity: 0 ;
+transform: scale(0.5,0.5);
+}
+.C1::after {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 1;
+opacity: 0;
+transition: all 0.3s;
+border: 1px solid rgb(206, 51, 51);
+transform: scale(1.2,1.2);
+}
+.C1:hover::after {
+opacity: 5;
+transform: scale(1,1);
+}
